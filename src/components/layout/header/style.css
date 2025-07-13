@@ -1,0 +1,3 @@
+.header-items{
+    column-gap: calc(15px + (60 - 20) * ((100vw - 320px) / (1296 - 320)));
+}
