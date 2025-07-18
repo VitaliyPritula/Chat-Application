@@ -5,8 +5,10 @@ export default {
     extend: {
       colors: {
         while: "#ffffff",
+        
         black: {
           50: "#131313",
+          100: "#12141D",
         },
         grey: "#636363",
 
@@ -19,7 +21,7 @@ export default {
        screens: {
         sm: "320px",
         // => @media (min-width: 320px) { ... }
-        md: "375px",
+        md: "425px",
         md1: "540px",
         md2: "620px",
         // => @media (min-width: 375px) { ... }
@@ -32,7 +34,7 @@ export default {
         // => @media (min-width: 1440px) { ... }
       },
       fontFamily: {
-         inter: ['Inter', 'sans-serif'],
+         inter: ['Inter'],
         Clachdisplay: ["ClashDisplay", "serif"],
       },
       fontWeight: {
@@ -45,14 +47,14 @@ export default {
       },
       fontSize: {
         //text-m
-        xs: "12px",
+        xs: "13px",
         s: "14px",
         m: "16px",
         sm: "18px",
         md: "20px",
         l: "24px",
         lg: "32px",
-        xlg: "42px",
+        xlg: "40px",
         xl: "48px",
         "2xl": "64px",
         "3xl": "80px",

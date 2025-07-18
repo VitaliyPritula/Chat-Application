@@ -25,7 +25,7 @@ export const Header = () => {
           <a
             href="/"
             className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300 overflow-x-hidden md1:w-auto w-[25px]">
-            <img src="/public/logo.svg" alt="" />
+            <img src="/public/logo.svg" alt="Logo" />
             Chat Application
           </a>
           {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export const Header = () => {
           </div>
           <div className="lg2:pr-0 md1:pr-15 pr-14 flex items-center header-items">
             <a href="" className="text-black">Login</a>
-            <button type="submit" className="btn text-m">
+            <button type="submit" className="btn lg:!text-m !text-s">
               Gen startde free
             </button>            
           </div>
