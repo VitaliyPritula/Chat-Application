@@ -36,7 +36,7 @@ export default function Features() {
             <div className="flex items-center gap-x-3.5">
               <img
                 className="bg-[#E8F3FF] rounded-full p-[9px]"
-                src="/public/video.svg"
+                src="/video.svg"
                 alt="video"
               />
               <h3 className="text-md font-inter font-bold">Video messaging</h3>
@@ -50,7 +50,7 @@ export default function Features() {
             <div className="flex items-center gap-x-3.5">
               <img
                 className="bg-[#E8F3FF] rounded-full p-[9px]"
-                src="/public/wifi.svg"
+                src="/wifi.svg"
                 alt="wifi"
               />
               <h3 className="text-md font-inter font-bold">Keep safe & private</h3>
@@ -65,7 +65,7 @@ export default function Features() {
               <div className="bg-[#FDFAEC] p-2">
                 <img
                   className="bg-[#E8F3FF] rounded-full p-[9px]"
-                  src="/public/timer.svg"
+                  src="/timer.svg"
                   alt="timer"
                 />
               </div>

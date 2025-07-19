@@ -1,5 +1,5 @@
-import React from "react";
 import { motion, useAnimation } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function Features() {
@@ -65,7 +65,7 @@ export default function Features() {
             </div>
           </div>
           <div className=" mb-10">
-            <img className="w-full" src="/public/Main/massege.jpg" alt="massege_img" />
+            <img className="w-full" src="/Main/massege.jpg" alt="massege_img" />
           </div>
         </div>
       </div>

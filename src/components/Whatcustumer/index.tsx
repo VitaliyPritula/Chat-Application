@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function Whatcustumer() {
@@ -17,20 +17,17 @@ export default function Whatcustumer() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
-
   return (
     <motion.section
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={sectionVariants}
-      className="bg-accent-50 py-[38px] text-while"
-    >
+      className="bg-accent-50 py-[38px] text-while">
       <div className="max-w-[1010px] mx-auto px-[15px]">
         <motion.h2
           variants={sectionVariants}
-          className="text-while font-Clachdisplay font-semibold lg:mb-11 mb-9 lg:text-center text-[35px]"
-        >
+          className="text-while font-Clachdisplay font-semibold lg:mb-11 mb-9 lg:text-center text-[35px]">
           What our customer are saying
         </motion.h2>
 
@@ -41,9 +38,8 @@ export default function Whatcustumer() {
               custom={i}
               initial="hidden"
               animate={controls}
-            //   variants={cardVariants}
-              className="flex-[0_1_450px]"
-            >
+              //   variants={cardVariants}
+              className="flex-[0_1_450px]">
               <h3 className="font-inter font-bold text-[23px] leading-8 mb-4">
                 {i === 0
                   ? "“The best ui kit for developers. So easy to implement and publish.”"
@@ -51,7 +47,7 @@ export default function Whatcustumer() {
               </h3>
               <div className="flex gap-3 mb-2 py-7">
                 <img
-                  src={`/public/Main/0${i + 2}.png`}
+                  src={`/Main/0${i + 2}.png`}
                   alt="Eli json"
                   className="w-8 h-8 rounded-full object-cover"
                 />

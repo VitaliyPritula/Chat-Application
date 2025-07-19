@@ -96,15 +96,15 @@ export default function Hero() {
                     : "opacity-0 translate-y-6"
                 }`}>
                 <div className="flex items-center">
-                  <img className="" src="/public/Main/01.png" alt="image" />
+                  <img className="" src="/Main/01.png" alt="image" />
                   <img
                     className="transform -translate-x-4"
-                    src="/public/Main/02.png"
+                    src="/Main/02.png"
                     alt="image"
                   />
                   <img
                     className="transform -translate-x-8"
-                    src="/public/Main/03.png"
+                    src="/Main/03.png"
                     alt="image"
                   />
                 </div>
@@ -130,7 +130,7 @@ export default function Hero() {
               <div className="mx-auto">
                 <img
                   className="md2:w-full w-[90%]"
-                  src="/public/Main/user.png"
+                  src="/Main/user.png"
                   alt="user"
                 />
                 <span className="-z-2 border-black border-3 top-9 rounded-full absolute md1:w-[414px] w-[313px] md1:h-[414px] h-[313px]"></span>
@@ -142,7 +142,7 @@ export default function Hero() {
                 }`}>
                 <div className="flex items-center gap-3 mb-2">
                   <img
-                    src="/public/Main/03.png"
+                    src="/Main/03.png"
                     alt="Eli json"
                     className="w-8 h-8 rounded-full object-cover"
                   />
@@ -162,7 +162,7 @@ export default function Hero() {
                 `}>
                 <div className="flex items-center gap-3 mb-2">
                   <img
-                    src="/public/Main/02.png"
+                    src="/Main/02.png"
                     alt="Eli json"
                     className="w-8 h-8 rounded-full object-cover"
                   />

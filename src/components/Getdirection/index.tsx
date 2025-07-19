@@ -69,7 +69,7 @@ export default function Features() {
           <div className="flex-1/2 mb-15">
             <img
               className="lx:w-auto w-full"
-              src="/public/Main/massege-2.jpg"
+              src="/Main/massege-2.jpg"
               alt="massege_img"
             />
           </div>

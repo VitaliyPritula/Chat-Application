@@ -31,7 +31,7 @@ export const Header = () => {
             href="/"
             className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300 overflow-x-hidden md1:w-auto w-[25px]">
             <img src="/logo.svg" alt="Logo" />
-            Chat Application
+            <span className="md1:block hidden">Chat Application</span>
           </a>
 
           {/* Desktop Navigation */}

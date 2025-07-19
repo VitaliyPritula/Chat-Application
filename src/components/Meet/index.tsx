@@ -40,7 +40,7 @@ export default function Features() {
       <div className="max-w-[1189px] mx-auto px-[15px]">
         <div className="flex flex-wrap">
           <div className="flex-1/2 mb-10">
-            <img className="lx:w-auto w-full" src="/public/Main/Skype.jpg" alt="skype_img" />
+            <img className="lx:w-auto w-full" src="/Main/Skype.jpg" alt="skype_img" />
           </div>
           <div className="lx:max-w-[453px]">
             <h2 className="font-Clachdisplay font-semibold md2:text-[40px] text-[30px] mb-[20px] text-black-50">

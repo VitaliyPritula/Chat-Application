@@ -52,7 +52,7 @@ export default function Footer() {
               <a
                 href="/"
                 className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300">
-                <img src="/public/logo.svg" alt="Logo" />
+                <img src="/logo.svg" alt="Logo" />
                 Chat Application
               </a>
             </div>
