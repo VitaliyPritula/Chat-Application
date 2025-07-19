@@ -1,3 +1,4 @@
+"use strict";
 import React, { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -37,10 +38,9 @@ export default function Hero() {
       document.body.classList.remove("overflow-hidden");
     }
     return () => {
+      clearTimeout(timeout);
       document.body.classList.remove("overflow-hidden");
     };
-
-    return () => clearTimeout(timeout);
   }, [isModalOpen]);
 
   return (
