@@ -30,7 +30,7 @@ export const Header = () => {
           <a
             href="/"
             className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300 overflow-x-hidden md1:w-auto w-[25px]">
-            <img src="/public/logo.svg" alt="Logo" />
+            <img src="/logo.svg" alt="Logo" />
             Chat Application
           </a>
 
