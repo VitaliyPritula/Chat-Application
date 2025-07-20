@@ -1,4 +1,3 @@
-// Footer.tsx
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,8 +6,8 @@ import {
   FaGoogle,
   FaWhatsapp,
   FaShoppingCart,
+  FaRegUser,
 } from "react-icons/fa";
-import { FaRegUser } from "react-icons/fa";
 
 export default function Footer() {
   const controls = useAnimation();
@@ -30,12 +29,13 @@ export default function Footer() {
   };
 
   const navLinks = ["Demos", "About", "Blog", "Pages", "Contact"];
+
   const socials = [
-    <FaGoogle />,
-    <FaShoppingCart />,
-    <FaFacebookF />,
-    <FaWhatsapp />,
-    <FaRegUser />,
+    { icon: <FaGoogle />, url: "https://www.google.com" },
+    { icon: <FaShoppingCart />, url: "https://www.example-shop.com" },
+    { icon: <FaFacebookF />, url: "https://www.facebook.com" },
+    { icon: <FaWhatsapp />, url: "https://wa.me/1234567890" },
+    { icon: <FaRegUser />, url: "https://www.example.com/profile" },
   ];
 
   return (
@@ -45,13 +45,15 @@ export default function Footer() {
           initial="hidden"
           animate={controls}
           variants={fadeUp}
-          className="max-w-6xl mx-auto flex flex-col md2:flex-row justify-between items-center gap-4">
+          className="max-w-6xl mx-auto flex flex-col md2:flex-row justify-between items-center gap-4"
+        >
           {/* Logo & Nav */}
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-2 font-semibold text-sm">
               <a
                 href="/"
-                className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300">
+                className="text-m text-black font-semibold font-inter flex gap-x-1 items-center transition-colors duration-300"
+              >
                 <img src="/logo.svg" alt="Logo" />
                 Chat Application
               </a>
@@ -66,24 +68,29 @@ export default function Footer() {
                 variants={fadeUp}
                 initial="hidden"
                 animate={controls}
-                className="hover:text-black">
+                className="hover:text-black"
+              >
                 {link}
               </motion.a>
             ))}
           </div>
 
-          {/* Social Icons */}
+          {/* Social Icons with Links */}
           <div className="flex gap-3 text-lg text-gray-700">
-            {socials.map((icon, i) => (
-              <motion.div
+            {socials.map(({ icon, url }, i) => (
+              <motion.a
                 key={i}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 custom={i}
                 variants={fadeUp}
                 initial="hidden"
                 animate={controls}
-                className="hover:text-black transition-colors">
+                className="hover:text-black transition-colors"
+              >
                 {icon}
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </motion.div>
@@ -94,7 +101,8 @@ export default function Footer() {
           animate={controls}
           variants={fadeUp}
           custom={navLinks.length + 1}
-          className="mt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+          className="mt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-2"
+        >
           <p>Copyright 2021, all rights reserved</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-black">
